@@ -10,6 +10,8 @@ This is a mono-repo that includes:
     - Serving assets
     - Generating pages
 
+This project was built to create a new no code bloat CMS with perfect SEO & [lighthouse score](https://web.dev/measure/)
+
 ## Features
 
 - Users
@@ -18,6 +20,7 @@ This is a mono-repo that includes:
     - Add / edit media files using Google Cloud Storage
 - Blog
     - Add / edit articles
+    - Categories
 - Subscribers
     - Collect emails from readers
 - Links
@@ -33,7 +36,7 @@ This is a mono-repo that includes:
 - Google AdSense
 - Disqus commenting
 
-# SETUP INSTRUCTIONS
+# Setup instructions
 
 1.  Create a Firebase project at https://firebase.google.com.
 2.  Enable Google authentication from Firebase Dashboard / Authentication / Sign-in method
@@ -48,11 +51,17 @@ This is a mono-repo that includes:
 
 Note. Some Firestore queries require indexes to be successful. Check your terminal and follow instructions when required to do so.
 
-Also, there are some bugs still..
-
-# ASSET CONFIGURATIONS
+# Asset configurations
 
 1. Create PWA assets using https://github.com/onderceylan/pwa-asset-generator to /backend/web/public/assets/splash -folder
 2. Generate favicons using https://realfavicongenerator.net/ to /backend/web/public/assets/icons -folder
 3. Configure manifest in /backend/web/public/assets/manifest.json
 4. Add og.jpg and logo.png to /backend/web/public/assets/images -folder
+
+# Other
+
+See the system in action [here](https://miikavonbell.com) (1st fork)
+
+There is no demo yet available for the admin panel, so you should try to setup a local copy yourself for now.
+
+There are still some bugs present which I am aware of but feel free to open up issues or [email me](mail:miikavonpetteri@gmail.com)
